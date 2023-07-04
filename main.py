@@ -44,7 +44,7 @@ def create_bonus():
     bonus = pygame.Surface(bonus_size)
     bonus.fill(COLOR_GOLD)
     bonus_rect = pygame.Rect(random.randint(0, WIDTH),  -30, *bonus_size)
-    bonus_move = [random.randint(0, 0), 1]
+    bonus_move = [0, random.randint(1, 5)]
     return [bonus, bonus_rect, bonus_move]
 
 CREATE_BONUS = pygame.USEREVENT + 2
