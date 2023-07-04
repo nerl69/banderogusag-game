@@ -39,7 +39,7 @@ player_move_top = [0, -4]
 def create_enemy():
     enemy_size = (30, 30)
     enemy = pygame.image.load('enemy.png').convert_alpha()
-    enemy_rect = pygame.Rect(1050, random.randint(0, HEIGHT), *enemy_size)
+    enemy_rect = pygame.Rect(WIDTH, random.randint(100, HEIGHT-100), *enemy.get_size())
     enemy_move = [random.randint(-8, -4), 0]
     return [enemy, enemy_rect, enemy_move]
 
